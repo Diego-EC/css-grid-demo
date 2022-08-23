@@ -2,8 +2,17 @@ import './../../styles/app.css';
 
 function App() {
   return (
-    <main className="container">
+    <main className="main">
       <h1>👌 News</h1>
+      <section className="sidebar">
+        <h2>Tags</h2>
+        <ul>
+          <li>Moon</li>
+          <li>Deep Space</li>
+          <li>Solar System</li>
+          <li>NASA</li>
+        </ul>
+      </section>
       <div className="gallery">
         <article className="card">
           <div className="card__img">

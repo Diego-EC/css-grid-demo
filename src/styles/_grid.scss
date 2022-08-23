@@ -1,4 +1,24 @@
+.main {
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    place-content: center;
+    grid-template-columns: repeat(3, 21rem);
+    grid-template-areas:
+        'title title title'
+        'gallery gallery sidebar';
+}
+
+h1 {
+    grid-area: title;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
 .gallery {
+    grid-area: gallery;
     display: grid;
     gap: 1rem;
     grid-template-columns: 15rem;
@@ -10,10 +30,12 @@
         //grid-template: 31rem 31rem 31rem / 15rem 15rem;
         grid-template-columns: repeat(2, 1fr);
     }
+
     @media screen and (min-width: 55rem) {
         //grid-template: 31rem 31rem 31rem / 15rem 15rem 15rem;
         grid-template-columns: repeat(3, 1fr);
     }
+
     @media screen and (min-width: 70rem) {
         //grid-template: 31rem 31rem 31rem / 15rem 15rem 15rem 15rem;
         grid-template-columns: repeat(4, 1fr);
